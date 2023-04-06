@@ -8,11 +8,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 		<link rel="stylesheet" href="./css/main.css" />
 
-
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
-
 <style>
 	.simple-header{
 		display: flex;
@@ -63,7 +61,6 @@
 .content
 {
 	margin-top: -100px;
-	
 	padding-left: 4rem;
 	padding-right: 2rem;
 	font-family: 'Barlow', sans-serif;
@@ -112,12 +109,13 @@ ul{
 	<div class="menu menu-hide">
 		<ul>
 			<li style="margin-top:-20px;"></li>
+			<li><a class="fcc-btn" href="index.html">Home</a></li>
 			<li><a class="fcc-btn" href="aboutus.html">About Us</a></li>
 			<li><a class="fcc-btn" id="svcClick" href="#">Services ></a></li>
 			<ul id="svcHideShow">
                 <li><a class="fcc-btn" href="#" id="bssClick">Background Screening Services ></a></li>
 				<ul id="bssHideShow">
-					<li><a class="fcc-btn" href="verification_services.html">Verification Services</a></li>
+					<li><a class="fcc-btn" href="#">Verification Services</a></li>
 					<li><a class="fcc-btn" href="#">Critical Enquiry</a></li>
 					<li><a class="fcc-btn" href="#">Integrity Enquiry</a></li>
 					<li><a class="fcc-btn" href="#">Professional Enquiry</a></li>
@@ -165,10 +163,11 @@ ul{
 			
 		</div>
 		<div class="content">
-			<h3>Welcome to PVL</h3>
-			<p>Hiring honest employees is the only way to create wealth for your company, and protect your business reputation.</p>
-			<p>How do you employ trustworthy, reliable staff with integrity? You can rely on your instincts.</p>
-            <p>Or you can have us professionally verify your job applicants CV and background to establish they are who they say they are, and have the qualifications they claim to have. </p>
+			<h3>Verification Services</h3>
+			<p>The PVL service is an incremental process.  It consists of increasing levels of enquiry which build upon one another to give the fullest possible picture of an applicant’s veracity.</p>
+
+             <p>All our reports include a written assessment of the information collected. </p>
+			
 		</div>
 
 	</div>
@@ -218,11 +217,12 @@ ul{
     		$("#tvqHideShow").toggle(500);
   		});
 
-		  $("#svcHideShow").hide();
 		  $("#nwsHideShow").hide();
-		  $("#bssHideShow").hide();
 		  $("#scanHideShow").hide();
 		  $("#tvqHideShow").hide();
+		  
+		  $("#svcHideShow").show();
+		  $("#bssHideShow").show();
 
 	});
 

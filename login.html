@@ -8,11 +8,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 		<link rel="stylesheet" href="./css/main.css" />
 
-
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
-
 <style>
 	.simple-header{
 		display: flex;
@@ -22,7 +20,7 @@
 .menu{
 	background-color: beige;
 	height: 100vh;
-	width: 300px;
+	width: 150px;
 	position: absolute;
 	top: 30;
 	left: 0;
@@ -63,7 +61,6 @@
 .content
 {
 	margin-top: -100px;
-	
 	padding-left: 4rem;
 	padding-right: 2rem;
 	font-family: 'Barlow', sans-serif;
@@ -105,13 +102,13 @@ ul{
 			
 		</div>
 		<div class="hamburger">
-			<img class="hamburger" width="60" height="60" src="./images/hamburger.png" alt="menu" onclick="changeImage(this)" />
-			
+			<img class="hamburger" width="60" height="60" src="./images/hamburger.png" alt=""  onclick="changeImage(this)" />
 		</div>
 
 	<div class="menu menu-hide">
 		<ul>
 			<li style="margin-top:-20px;"></li>
+			<li><a class="fcc-btn" href="index.html">Home</a></li>
 			<li><a class="fcc-btn" href="aboutus.html">About Us</a></li>
 			<li><a class="fcc-btn" id="svcClick" href="#">Services ></a></li>
 			<ul id="svcHideShow">
@@ -165,10 +162,16 @@ ul{
 			
 		</div>
 		<div class="content">
-			<h3>Welcome to PVL</h3>
-			<p>Hiring honest employees is the only way to create wealth for your company, and protect your business reputation.</p>
-			<p>How do you employ trustworthy, reliable staff with integrity? You can rely on your instincts.</p>
-            <p>Or you can have us professionally verify your job applicants CV and background to establish they are who they say they are, and have the qualifications they claim to have. </p>
+            <h3>Client Login</h3>
+			<p>Please use the facility below to login to the client area.</p>
+            Username:<br>
+            <input type="text" name="username">
+            Password:<br>
+            <input type="text" name="password">
+            <p>
+            <input type="button" name="submit" value="Send">
+            </p>
+
 		</div>
 
 	</div>
@@ -182,6 +185,7 @@ ul{
 			mymenu.classList.toggle("menu-hide");
 			mymenu.classList.toggle("menu-show");
 		}
+
 
 		// https://dirask.com/posts/JavaScript-change-image-on-click-1wAYZp
 
@@ -225,6 +229,7 @@ ul{
 		  $("#tvqHideShow").hide();
 
 	});
+
 
 	</script>
 	</body>
